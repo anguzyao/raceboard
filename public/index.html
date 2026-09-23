@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/corner-x-scoreboard-icon-180.png"
+>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Corner X 計分排行榜</title>
+
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  >
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- =========================
+         Header
+         ========================= -->
+
+    <header class="header">
+
+      <div>
+
+       <img
+  class="site-logo"
+  src="/logo.png"
+  alt="CORNER X"
+>
+
+        <h1 id="siteTitle">
+          比賽排名
+        </h1>
+
+      </div>
+
+      <button
+        id="adminButton"
+        class="icon-button"
+        aria-label="管理員登入"
+      >
+        🔒
+      </button>
+
+    </header>
+
+
+    <!-- =========================
+         競賽切換
+         ========================= -->
+
+    <section
+      id="competitionTabs"
+      class="competition-tabs"
+    >
+    </section>
+
+
+    <!-- =========================
+         排名狀態
+         ========================= -->
+
+    <section class="status-card">
+
+      <div>
+
+        <span class="status-label">
+          目前排名
+        </span>
+
+        <strong id="updatedAt">
+          尚未更新
+        </strong>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         公開排名
+         ========================= -->
+
+    <section
+      id="rankingList"
+      class="ranking-list"
+    >
+
+      <div class="empty-state">
+
+        <p>
+          目前尚無參賽者
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="/app.js"></script>
+
+</body>
+
+</html>
